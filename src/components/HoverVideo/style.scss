@@ -1,0 +1,86 @@
+$path: 'https://tri-do-site.web.app/';
+.hover-video-wrapper {
+  width: inherit;
+}
+.hover-video {
+  position: relative;
+  width: inherit;
+  img {
+    width: 100%;
+    height: inherit;
+    max-height: 100%;
+    border-radius: 1rem;
+  }
+}
+.hover-video-container {
+  position: absolute;
+  width: inherit;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, width 1s ease-in;
+  z-index: 1;
+  &:hover {
+    opacity: 1;
+    width: calc(100%);
+  }
+  .video-js {
+    padding-top: 42.5%;
+    width: auto;
+    height: fit-content;
+    border-radius: 1rem 1rem 0 0;
+    .vjs-tech {
+      width: 100%;
+      height: auto;
+      border-radius: inherit
+    }
+  }
+  .vjs-mute-button {
+    width: 20% ;
+  }
+  .hover-video-actions {
+    margin: 0 !important;
+    padding: 5px;
+    border-radius: 0 0 1rem 1rem;
+    background-color: black;
+    font-size: 1.25vw;
+    a, a:hover, .action-item:hover {
+      width: unset;
+    }
+    div, div:hover {
+      margin: 0;
+    }
+    .col {
+      padding: 5px;
+      margin: 0;
+    }
+    .icon-place-holder.play {
+      &:before {
+        filter: invert(1);
+        content: url($path+'/images/icons/play-circle.svg');
+      }
+    }
+    .icon-place-holder.add {
+      &:before {
+        filter: invert(1);
+        content: url($path+'/images/icons/checked-circle.svg');
+      }
+    }
+    .icon-place-holder.information {
+      &:before {
+        filter: invert(1);
+        content: url($path+'/images/icons/information-circle.svg');
+      }
+    }
+    .icon-place-holder.like {
+      &:before {
+        filter: invert(1);
+        content: url($path+'/images/icons/like-circle.svg');
+      }
+    }
+    .icon-place-holder.dislike {
+      &:before {
+        filter: invert(1);
+        content: url($path+'/images/icons/dislike-circle.svg');
+      }
+    }
+  }
+}

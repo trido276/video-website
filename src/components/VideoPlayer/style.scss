@@ -1,0 +1,318 @@
+.player-wrapper {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+$primary-foreground-color: #fff; 
+$primary-background-color: #000; 
+
+$center-big-play-button: true;
+$path: 'https://tri-do-site.web.app/';
+.video-js {
+  font-size: 10px;
+  color: $primary-foreground-color;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 3em;
+  $big-play-width: 100px; 
+  $big-play-height: 100px;
+
+  line-height: $big-play-height;
+  height: $big-play-height;
+  width: $big-play-width;
+
+  border: unset;
+  border-radius: 50em;
+
+  @if $center-big-play-button {
+    left: 50%;
+    top: 50%;
+    margin-left: -($big-play-width / 2);
+    margin-top: -($big-play-height / 2);
+  } @else {
+    left: 0.5em;
+    top: 0.5em;
+  }
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  background-color: $primary-background-color;
+  background-color: rgba($primary-background-color, 0.0);
+}
+
+$slider-bg-color: lighten($primary-background-color, 33%);
+
+.video-js .vjs-slider {
+  background-color: $slider-bg-color;
+  background-color: rgba($slider-bg-color, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: $primary-foreground-color;
+}
+
+.video-js .vjs-load-progress {
+  background: lighten($slider-bg-color, 25%);
+  background: rgba($slider-bg-color, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+  background: lighten($slider-bg-color, 50%);
+  background: rgba($slider-bg-color, 0.75);
+}
+
+.video-js .vjs-control {
+  width: 5em;
+}
+
+.video-js .vjs-control.vjs-title {
+  width: 25rem;
+  flex: none;
+  padding: 0 1rem;
+  @media only screen and (max-width: 768px)  {
+    width: 21rem;
+  }
+  @media only screen and (max-width: 645px)  {
+    display: none;
+  }
+}
+
+.video-js .vjs-button {
+  padding: 0 2rem;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.1s, opacity 0.1s;
+}
+
+.vjs-mute-button {
+  width: 8%;
+  padding: 10px;
+  right: 3%;
+  position: absolute;
+  bottom: 30%;
+  span{
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+  :hover {
+    opacity: 1;
+  }
+  :before {
+    filter: brightness(0) invert(0.9);
+    content: url($path+'/images/icons/volume-adjustment.svg');
+    width: 55%;
+    left: 27%;
+    top: 12.5%;
+  }
+}
+.vjs-mute-button.vjs-vol-0 {
+    :before {
+    content: url($path+'/images/icons/mute-circle.svg');
+  }
+}
+.vjs-back-button {
+  width: 8%;
+  padding: 3% 0 0 2%;
+  :before {
+    content: url($path+'/images/icons/left-arrow.svg');
+    filter: brightness(0) invert(1);
+    width: 55%;
+    left: 27%;
+    top: 12.5%;
+  }
+}
+
+.vjs-icon-play:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: url($path+'/images/icons/001-play.svg');
+  filter: brightness(0) invert(1);
+  width: 55%;
+  left: 27%;
+  top: 12.5%;
+}
+
+.video-js .vjs-play-control .vjs-icon-placeholder:before{
+  cursor: pointer;
+  content: url($path+'/images/icons/play.svg');
+  filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  left: 25%;
+  top: 5%;
+}
+.video-js .vjs-mute-control .vjs-icon-volume-mute:before
+{
+  content: url($path+'/images/icons/mute.svg');
+  filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  left: 20%;
+  top: 10%;
+  line-height: normal;
+}
+
+.vjs-icon-volume-mute:before, .video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder:before{
+  content: url($path+'/images/icons/mute.svg');
+  filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  left: 20%;
+  top: 5%;
+  line-height: normal;
+}
+.vjs-icon-volume-low:before, .video-js .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder:before,
+.vjs-icon-volume-mid:before, .video-js .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder:before,
+  .vjs-icon-volume-high:before, .video-js .vjs-mute-control .vjs-icon-placeholder:before  {
+  content: url($path+'/images/icons/volume.svg');
+  filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  left: 20%;
+  top: 5%;
+  line-height: normal;
+  }
+  .video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-vertical {
+    left: -55px;
+  }
+
+  .vjs-icon-replay:before, .video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder:before {
+    content: url($path+'/images/icons/refresh.svg');
+  filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  left: 20%;
+  top: 5%;
+  line-height: normal;
+  }
+
+.vjs-icon-pause:before, .video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before{
+  content: url($path+'/images/icons/pause (1).svg');
+  filter: brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  left: 25%;
+  top: 10%;
+  line-height: normal;
+}
+
+.video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before{
+  content: url($path+'/images/icons/minimize.svg');
+  filter: brightness(0) invert(1);
+  top:5%;
+  width: 30px;
+}
+
+.vjs-icon-fullscreen-enter:before, .video-js .vjs-fullscreen-control .vjs-icon-placeholder:before{
+  content: url($path+'/images/icons/expand.svg');
+  filter: brightness(0) invert(1);
+  top:5%;
+  width: 30px;
+}
+
+.video-js .vjs-play-progress:before {
+  font-size: 1.3em;
+}
+.video-js .vjs-control-bar {
+  height: 40px;
+  margin: 5px 0;
+}
+.video-js .vjs-progress-control {
+  align-items: center;
+  min-width: 5em;
+  touch-action: none;
+  position: absolute;
+  width: 98%;
+  top: -1.3em;
+  left: 1%;
+  height: 10px;
+}
+.video-js .vjs-fullscreen-control {
+  position: absolute;
+  right: 1%;
+}
+.video-js .vjs-picture-in-picture-control {
+  position: absolute;
+  right: 35px;
+}
+
+.vjs-seek-button.skip-back .vjs-icon-placeholder:before{
+  content: url($path+'/images/icons/skip-back.svg');
+  filter: brightness(0) invert(1);
+  top:5%;
+}
+
+.vjs-seek-button.skip-forward .vjs-icon-placeholder:before{
+  content: url($path+'/images/icons/skip-forward.svg');
+  filter: brightness(0) invert(1);
+  top:5%;
+}
+
+.video-js .vjs-modal-dialog.vjs-sub-banner {
+  max-height: 60%;
+  top: auto;
+  bottom: 30%;
+  left: 5%;
+  max-width: 60%;
+  background: none;
+  font-size: 1.4vw;
+  text-shadow: 1px 1px grey;
+  overflow: hidden;
+  display: block;
+  img {
+    display: flex;
+    height: 40%;
+  }
+  @media (max-width: 576px) {
+    // display: none;
+  }
+  .description {
+    padding: 1em 0.5em;
+    // @media screen and (max-width: 768px) {
+    //   display: none;
+    // }
+  }
+  .redirect-button {
+    padding: 0.35em 1.5em;
+    border-radius: 0.5em;
+    background: rgba(lighten($primary-background-color, 98%), 1);
+    color: lighten($primary-background-color, 20%);
+    &:hover {
+      background: rgba(lighten($primary-background-color, 90%), 1);
+    }
+    >.title{
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      &:before{
+        content: url($path+'/images/icons/play-circle.svg');
+        width: 2em;
+        height: 2em;
+        left: 25%;
+        top: 5%;
+        margin: 0 0.5em;
+      }
+    }
+  }
+}
+
+.vjs-inner-title {
+  font-size: initial;
+  margin: 3% 0;
+  text-align: left;
+}
+
+.video-js .vjs-modal-dialog {
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  .vjs-modal-dialog-content{
+    top: 50%;
+  }
+}

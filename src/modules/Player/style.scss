@@ -1,0 +1,28 @@
+.player-wrapper {
+  $imgIndex: 6;
+  $bannerIndex: 1;
+  .player-banner {
+    height: 100vh;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    .player-top-right {
+      position: absolute;
+      z-index: $bannerIndex;
+      right: 0;
+    }
+    .player-top-left {
+      position: absolute;
+      opacity: 1;
+      transition: opacity 2s;
+      z-index: $bannerIndex;
+      left: 0;
+    }
+  }
+}
+.video-js .vjs-control-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

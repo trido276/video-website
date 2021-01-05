@@ -1,0 +1,147 @@
+$backGroundColor: #000;
+// $backGroundColor: #282c34;
+$path: 'https://tri-do-site.web.app/';
+$breakPoint: 745px;
+$innerSpace: 2rem;
+// $path: 'http://localhost:3000/';
+/*
+$mobile
+$tablet
+$laptop
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.25rem lighten($backGroundColor, 10%); 
+  border-radius: 0.5rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lighten($backGroundColor, 25%); 
+  border-radius: 0.5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:lighten($backGroundColor, 20%); 
+}
+.App-header {
+  min-height: 100vh;
+  width: 100vw;
+  color: white;
+  padding: $innerSpace 0 0 $innerSpace;
+  overflow: hidden auto;
+  background-color: $backGroundColor;
+  @media screen and (max-width: 768px) {
+    padding: ($innerSpace - 1) 0 0 ($innerSpace - 1);
+  }
+}
+.side-nav {
+  padding: 40px 5px 0px;
+  width: 6%;
+  z-index: 1;
+  background: $backGroundColor;
+  min-width: 4rem;
+  box-shadow: 13px 6px 16px 0px rgba(122, 122, 122, 0.36);
+  @media screen and (max-width: 576px){
+    display: none;
+  }
+  .nav-items{
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+  }
+  .nav-item{
+    margin: auto 5%;
+    padding: 2em 0.25em;
+    display: block;
+    a {
+      color:white
+    }
+    &.logo.active{
+      box-shadow: unset;
+    }
+    &.active{
+      border-radius: 15px;
+      box-shadow: 0 0 11px 0px rgba(122, 122, 122, 0.36);
+    }
+    &.icon-place-holder{
+      &.logo:before {
+        content: url($path+'/images/icons/home.svg');
+        filter: invert(1) contrast(40%);
+      }
+      &.search:before {
+        content: url($path+'/images/icons/loupe.svg');
+        filter: invert(1);
+      };
+      &.home:before {
+        content: url($path+'/images/icons/home.svg');
+        filter: invert(1);
+      }
+      &.user:before {
+        content: url($path+'/images/icons/user.svg');
+        filter: invert(1);
+      }
+      &.settings:before {
+        content: url($path+'/images/icons/settings.svg');
+        filter: invert(1);
+      }
+    };
+  }
+}
+header, footer {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+header {
+  z-index: 1;
+  min-width: 100vw;
+  font-size: 28px;
+}
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+.card {
+  margin: 10px 0;
+}
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+video {
+  width: 100%;
+  height: 50vh;
+}
+img {
+  object-fit: cover;
+  object-position: center top;
+}
+p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.video-banner {
+  margin-top: ($innerSpace * -1);
+  margin-right: 0;
+  margin-left: ($innerSpace * -1);
+  margin-bottom: -15vh;
+  box-shadow: 0px 1rem 1rem lighten($backGroundColor, 30%);
+  @media screen and (max-width: 745px) {
+    max-height: 30%;
+    margin-bottom: 20%;
+  }
+  .vjs-poster {
+    background-color: rgba($backGroundColor, 0.8);
+    background-size: cover;
+    cursor: default !important;
+  }
+}

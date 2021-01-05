@@ -1,0 +1,28 @@
+.my-list {
+  min-height: 160px;
+  width: 85vw;
+  margin-right: 3rem;
+  font-size: 2vw;
+  text-shadow: 1px 1px grey;
+  @media screen and (max-width: 745px) {
+    width: 100%;
+  }
+  .row {
+    @media screen and (max-width: 576px) {
+      justify-content: center;
+      margin: 0;
+    }
+  }
+  .video-listing {
+    display: inline-flex;
+    height: fit-content;
+    .hover-video-wrapper{
+    }
+  }
+  .video-listing-item{
+    padding: 1%;
+    @media screen and (max-width: 576px) {
+      padding: 5px
+    }
+  }
+}
