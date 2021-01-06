@@ -6,6 +6,7 @@ import {
   useParams
 } from "react-router-dom";
 import VideoPlayer from '../../components/VideoPlayer/index.js'
+import NotFound from './../../NotFound';
 const SOURCE = require('./../../source.json')
 const Player = (props) => {
   // const {
@@ -54,21 +55,27 @@ const Player = (props) => {
   }
   
   return (
-    <div className="App">
-      <div className="player-wrapper">
-        <div className="player-banner">
-        <VideoPlayer
-          ref={videoPlayer}
-          style={{"height":"100vh"}}
-            {...{
-              videoJsOptions:videoJsOptions,
-              videoInfo: videoInfo}
-            }
-          />
-        </div>
-      </div>
-    </div>
-    )
+    <>
+      {
+        videoInfo ? 
+          <div className="App">
+            <div className="player-wrapper">
+              <div className="player-banner">
+              <VideoPlayer
+                ref={videoPlayer}
+                style={{"height":"100vh"}}
+                  {...{
+                    videoJsOptions:videoJsOptions,
+                    videoInfo: videoInfo
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        : <NotFound/>
+      }
+    </>
+  )
 }
 
 export default Player

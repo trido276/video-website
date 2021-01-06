@@ -7,7 +7,6 @@ const VideoList = (props) => {
     title,
     sources
   } = props
-
   const videoJsOptions = {
     autoplay: true,
     controls: false,
@@ -37,7 +36,7 @@ const VideoList = (props) => {
       <div className="row">
         {sources.map(videoInfo =>
           <div className="col-6 col-lg-3 video-listing-item" key={videoInfo.id}>
-            <HoverVideo {...{videoJsOptions: videoJsOptions, videoInfo: {...videoInfo,src:videoInfo.trailer}}}/>
+            <HoverVideo {...{videoJsOptions: videoJsOptions, videoInfo: videoInfo}}/>
           </div>
         )}
       </div>

@@ -6,6 +6,7 @@ import {
     NavLink,
 } from "react-router-dom";
 import Home from './Home';
+import NotFound from './NotFound';
 import Player from './modules/Player/index.js';
 
 import './App.scss';
@@ -63,7 +64,7 @@ function App() {
                         <div className="" style={{ display: "flex", overflow:"hidden", height:"100vh"}}>
                             <aside className="side-nav">
                                 <ul className="nav-items">
-                                    <NavLink className="nav-item icon-place-holder logo" to="/"></NavLink>
+                                    <NavLink className="nav-item icon-place-holder logo" to="/"/>
                                     <NavLink className="nav-item icon-place-holder search" to="/search"/>
                                     <NavLink className="nav-item icon-place-holder home" to="/home"/>
                                     <NavLink className="nav-item icon-place-holder user" to="/user"/>
@@ -76,8 +77,9 @@ function App() {
                         </div>
                     </Route>
                 ))}
+                <Route path="/player/:id" component={Player}></Route>
+                <Route component={NotFound}></Route>
             </Switch>
-            <Switch><Route path="/player/:id" component={Player}></Route></Switch>
         </Router>
     );
 }

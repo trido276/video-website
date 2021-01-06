@@ -2,43 +2,47 @@
   {
     "id":"1",
     "title":"My Hero Academia - Season 5",
-    "poster":"https://cdn.vox-cdn.com/thumbor/jXqE0_L-tKHYVWHJ-OrZk9cubVI=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/10601781/48e35398.jpg",
+    "posterHor":"https://cdn.vox-cdn.com/thumbor/jXqE0_L-tKHYVWHJ-OrZk9cubVI=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/10601781/48e35398.jpg",
     "src":  "https://cdn-cf-east.streamable.com/video/mp4/us8hqx_1.mp4?Expires=1609495980&Signature=WVF~Oz1WxZOs0p4s7svfDHAXjiM8cAAxqW74L1mim7iwtrwqidY1Im6vUa-hM3r7nsuoArRgmVIou01TS8k~kLcEcdGwSEp1kMu3FUncAnmBWzQyVxclIESwTVptTIZRH629jd7qltEH-DXTTpfgwuxYJqNgwwUuM3GiK2HgP6diN03FaDR0d4dC4dajVFZrFwMnpuiGzLnpyKedZIqaQ0nSFIQq0qOHNLFtiEA6VcbvcU2vjWSIGM0xpAZhdGsqc1U80IAVClDVNANVf0FoPyvaxB5xLh1krMOUSn92yVADPmg-Zn2xy3~rxmM1ji8KyyaJ-1Ud12jOhOl7sFiveg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
     "trailer":  "https://cdn-cf-east.streamable.com/video/mp4/us8hqx_1.mp4?Expires=1609495980&Signature=WVF~Oz1WxZOs0p4s7svfDHAXjiM8cAAxqW74L1mim7iwtrwqidY1Im6vUa-hM3r7nsuoArRgmVIou01TS8k~kLcEcdGwSEp1kMu3FUncAnmBWzQyVxclIESwTVptTIZRH629jd7qltEH-DXTTpfgwuxYJqNgwwUuM3GiK2HgP6diN03FaDR0d4dC4dajVFZrFwMnpuiGzLnpyKedZIqaQ0nSFIQq0qOHNLFtiEA6VcbvcU2vjWSIGM0xpAZhdGsqc1U80IAVClDVNANVf0FoPyvaxB5xLh1krMOUSn92yVADPmg-Zn2xy3~rxmM1ji8KyyaJ-1Ud12jOhOl7sFiveg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
   },
   {
     "id":"2",
     "title":"Dr. STONE - Season 2",
-    "poster":"https://i.ytimg.com/vi/DnGov2LG1os/maxresdefault.jpg",
+    "posterHor":"https://i.ytimg.com/vi/DnGov2LG1os/maxresdefault.jpg",
     "src":  "https://cdn-cf-east.streamable.com/video/mp4/3h7y9m.mp4?Expires=1609496880&Signature=fkW-HEI3b4fGKmYJkbO8Qvaokf9mKCiJGatk2k7XaQC~61ixTJuGkMiWtb7Sj-JhLRL8HYnJ1dc7zlyX-HHAKaKJAnzDXVIr0uRhOrw1fIJJwA3edZnI0TInQPiz~IPtrmGWQ2RUN1vxxfWYNBW4je5NrxejNEPz1nn5jDo2zP0p4WKjRR17rL6C5ewFWxADJ3ylE4cKLqq1tCYA738FevZh~7wUQhvh46Dy0B2jqZCjetbjONxqPSMvUtmflQpZii04VmvD6DrHQZVbH5gM~UwA-nYdWTNpkhbIBuSAPCZ1zKFaVbxucoFnC6kpOXOKQR8xJ3JCCpn6x63AGqWo~A__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
     "trailer":  "https://cdn-cf-east.streamable.com/video/mp4/3h7y9m.mp4?Expires=1609496880&Signature=fkW-HEI3b4fGKmYJkbO8Qvaokf9mKCiJGatk2k7XaQC~61ixTJuGkMiWtb7Sj-JhLRL8HYnJ1dc7zlyX-HHAKaKJAnzDXVIr0uRhOrw1fIJJwA3edZnI0TInQPiz~IPtrmGWQ2RUN1vxxfWYNBW4je5NrxejNEPz1nn5jDo2zP0p4WKjRR17rL6C5ewFWxADJ3ylE4cKLqq1tCYA738FevZh~7wUQhvh46Dy0B2jqZCjetbjONxqPSMvUtmflQpZii04VmvD6DrHQZVbH5gM~UwA-nYdWTNpkhbIBuSAPCZ1zKFaVbxucoFnC6kpOXOKQR8xJ3JCCpn6x63AGqWo~A__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
   },
   {
     "id":"4",
     "title":"Demon Slayer - Kimetsu no Yaiba - The Movie",
-    "poster":"//i.ytimg.com/vi/IFbseiMCLsE/hq720.jpg",
+    "posterHor":"//i.ytimg.com/vi/IFbseiMCLsE/hq720.jpg",
     "src":  "https://d2zihajmogu5jn.cloudfront.net/tears-of-steel/playlist.m3u8",
     "trailer":  "https://cdn-cf-east.streamable.com/video/mp4/dlcemt_1.mp4?Expires=1609482180&Signature=lm-cnknBEd9czB3qGYcx4q0po~QKnSsp6-zPlFE7FFkak1Pglxcs3kqJFs8wDAaT~PCrrZhY~ph3~mB6-ZOAMFs6XaowMY213PKvDliB36GEj0aiI0i12rh5nmv6K9c3CoU523IwPbKQXyva8Vj~lvHuhE6p0gE2HLtxw~rKLT6ssywKmm-01PNOMZhQvjL-7zUbvi~pCXtVPppGNHo5NRSICbMk4rpUoZYftRvgBnLNYVazZmOtSFeKyXRSRGBFp0W5YHl-HEd3Sp3D1HdZtraz9hAu-aU0o05sdSZMIGfaegr3vufWYypf42f2mgPM6gkPP83ZoPFHd73M6j6jkg__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
   },
   {
     "id":"5",
     "title":"Your Name",
-    "poster":"//i.ytimg.com/vi/xU47nhruN-Q/hq720.jpg",
+    "posterHor":"//i.ytimg.com/vi/xU47nhruN-Q/hq720.jpg",
     "src":  "https://cdn-cf-east.streamable.com/video/mp4/jw3dq8_1.mp4?Expires=1609496340&Signature=TYXsJrNERMRcJtd5xtcRHb8E3dZ2a7yiU4Elyaj25F0kPKTTiKnfKw~QFJGQ7rNKaHl5MevAMtCR5uB6Fb-SxvSKleMeAQ89BWAGnecF9kM6Ml7Dw9mGA6W9YOUcZx0kFHEHgo5tbbQGYnvjEYk0jEm6CLa2ccsEG8kJ3zZ6DPpFXsRZ07LlMDSCgIvDEfpl5gkmTIAg4RctItidWOe1hwULfKZzQg4qWSjblQ7-xVn9bZ1i7PIfSE-8NZf7NF0mpxXJavEqb05AB1lRVTsrNrsnywpan~dWd-jhIPklapMQ7o-SRks63Xj3f-LQ~khQsgjpCZnf1aP0NQKbcsN-rw__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
     "trailer":  "https://cdn-cf-east.streamable.com/video/mp4/jw3dq8_1.mp4?Expires=1609496340&Signature=TYXsJrNERMRcJtd5xtcRHb8E3dZ2a7yiU4Elyaj25F0kPKTTiKnfKw~QFJGQ7rNKaHl5MevAMtCR5uB6Fb-SxvSKleMeAQ89BWAGnecF9kM6Ml7Dw9mGA6W9YOUcZx0kFHEHgo5tbbQGYnvjEYk0jEm6CLa2ccsEG8kJ3zZ6DPpFXsRZ07LlMDSCgIvDEfpl5gkmTIAg4RctItidWOe1hwULfKZzQg4qWSjblQ7-xVn9bZ1i7PIfSE-8NZf7NF0mpxXJavEqb05AB1lRVTsrNrsnywpan~dWd-jhIPklapMQ7o-SRks63Xj3f-LQ~khQsgjpCZnf1aP0NQKbcsN-rw__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
   },
   {
     "id":"6",
     "title":"Attack on Titan Opening 6 — Final Season | My War",
-    "poster":"//i.ytimg.com/vi/Db1fj2pRFu8/hq720.jpg",
-    "src": "https://cdn-cf-east.streamable.com/video/mp4/533vp9_1.mp4?Expires=1609477440&Signature=lYFpOXcAkcyViDtyvcmavMNPTh1gO~wTtObzKlmcauFmQvc2YtN2NjAknYOpvpW7g9gc0cx0mCpZ2Kr3AKMqBytpKtlMu1~okSCunu9KBifQ-2AM18I4jKf8ewv6PCbjM9lbFvM2JjQmy1jnSOR~~oynsaGhkbSdQpJq9DJ7g3-wOsuT8Wj-o6WyWdz~CuurcfwQO1gzQDC2avc3CWXlbmnT7BAIxRma9LetCiP-SV6GypG0x5f05hVhVaWNWBesgXl-juK5ahfaa98ffyfMxK4cZxlBnxWKKvt1uK~dq5NPOItwHGaz3EI9wk~e3f5r6g0QMAq0pqzwcf51wdzHLQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
-    "trailer": "https://cdn-cf-east.streamable.com/video/mp4/533vp9_1.mp4?Expires=1609477440&Signature=lYFpOXcAkcyViDtyvcmavMNPTh1gO~wTtObzKlmcauFmQvc2YtN2NjAknYOpvpW7g9gc0cx0mCpZ2Kr3AKMqBytpKtlMu1~okSCunu9KBifQ-2AM18I4jKf8ewv6PCbjM9lbFvM2JjQmy1jnSOR~~oynsaGhkbSdQpJq9DJ7g3-wOsuT8Wj-o6WyWdz~CuurcfwQO1gzQDC2avc3CWXlbmnT7BAIxRma9LetCiP-SV6GypG0x5f05hVhVaWNWBesgXl-juK5ahfaa98ffyfMxK4cZxlBnxWKKvt1uK~dq5NPOItwHGaz3EI9wk~e3f5r6g0QMAq0pqzwcf51wdzHLQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
+    "logo": "https://images.squarespace-cdn.com/content/v1/5bfc2f03af20967c04dd3cb7/1552706321589-JHO663ZN310IEWOW2KC4/ke17ZwdGBToddI8pDm48kGriWbKM87yKft9gfUQrkQ1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxTFRHy9_jbmAPAUlBF0ZmRXIqe8gQm25-FK0lfuuj8MmHhqoToCk9JCW3J3XnuIUw/Attack+on+Titan+Logo.png",
+    "description": "The last time fans saw Eren, Mikasa, Armin and the gang, Attack On Titan had just dropped its long-awaited basement reveal.",
+    "posterBig":"//s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/05/30004846/attack-on-titan-season-4-release-date-trailer-more.jpg",
+    "posterHor":"//i.ytimg.com/vi/Db1fj2pRFu8/hq720.jpg",
+    "posterVer":"//i.ytimg.com/vi/Db1fj2pRFu8/hq720.jpg",
+    "src":  "https://cdn-cf-east.streamable.com/video/mp4/533vp9_1.mp4?Expires=1609477440&Signature=lYFpOXcAkcyViDtyvcmavMNPTh1gO~wTtObzKlmcauFmQvc2YtN2NjAknYOpvpW7g9gc0cx0mCpZ2Kr3AKMqBytpKtlMu1~okSCunu9KBifQ-2AM18I4jKf8ewv6PCbjM9lbFvM2JjQmy1jnSOR~~oynsaGhkbSdQpJq9DJ7g3-wOsuT8Wj-o6WyWdz~CuurcfwQO1gzQDC2avc3CWXlbmnT7BAIxRma9LetCiP-SV6GypG0x5f05hVhVaWNWBesgXl-juK5ahfaa98ffyfMxK4cZxlBnxWKKvt1uK~dq5NPOItwHGaz3EI9wk~e3f5r6g0QMAq0pqzwcf51wdzHLQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
+    "trailer":  "https://cdn-cf-east.streamable.com/video/mp4/533vp9_1.mp4?Expires=1609477440&Signature=lYFpOXcAkcyViDtyvcmavMNPTh1gO~wTtObzKlmcauFmQvc2YtN2NjAknYOpvpW7g9gc0cx0mCpZ2Kr3AKMqBytpKtlMu1~okSCunu9KBifQ-2AM18I4jKf8ewv6PCbjM9lbFvM2JjQmy1jnSOR~~oynsaGhkbSdQpJq9DJ7g3-wOsuT8Wj-o6WyWdz~CuurcfwQO1gzQDC2avc3CWXlbmnT7BAIxRma9LetCiP-SV6GypG0x5f05hVhVaWNWBesgXl-juK5ahfaa98ffyfMxK4cZxlBnxWKKvt1uK~dq5NPOItwHGaz3EI9wk~e3f5r6g0QMAq0pqzwcf51wdzHLQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
   },
   {
     "id":"7",
     "title":"The Wicher",
     "logo": "//occ-0-395-64.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUR14OlYGF5VL4VioNxMh89cHeyG_8tk9HgUNrFoROI8imOI9ge-b6MQBE3ippxIxbGLIUkz7WHsP19XlYTuKl5OZXP2-pezbF78xJCxQSRq2JqkgahHRITWgvsaXnFW3vITq09cpCkOxRKgf2ysBj4W28V6vy3MbkFTFGmQ084Mcg.webp",
-    "poster":"https://www.glitched.online/wp-content/uploads/2019/12/the_witcher_netflix_promos-2.jpg",
+    "posterHor":"https://www.glitched.online/wp-content/uploads/2019/12/the_witcher_netflix_promos-2.jpg",
     "description": "A sword-wielding slayer, scorned by society, following a moral compass all his own. But not even a Witcher can fight destiny.",
     "src": "https://cdn-cf-east.streamable.com/video/mp4/2hzx0j.mp4?Expires=1609497300&Signature=hawk4VBFTsEgep7B~GaDPDCRPmQX7C60lpXsWPRXyIh5vY2flQXioA4ru6AuF0VATTzWogG8Hti~bZmARZMzDwXNtuIIqdQRHmYOyZN0JejAoA324MSSsd9xS3NZTr~vJJZsMmK-wkj6OdHqpQeUtyzmTwAuEf0-qf8-lH3s2zW9aTpgi3Tb0gmauES-IELEoYUqCJsJoz~pNyypcbDv~9R3bPATJjSGGtwpYT9Vv1Jft0wcGdaoC1L5vQySx1lWmg-b3fISamuFmGdXdRFS9GnrOmectzcehxLW2CTgX4jS44Yvz9MkPsJgVst3PDRvJ-vbU64qHWCpdAPzGqt6Zw__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ",
     "trailer":  "https://cdn-cf-east.streamable.com/video/mp4/2hzx0j.mp4?Expires=1609497300&Signature=hawk4VBFTsEgep7B~GaDPDCRPmQX7C60lpXsWPRXyIh5vY2flQXioA4ru6AuF0VATTzWogG8Hti~bZmARZMzDwXNtuIIqdQRHmYOyZN0JejAoA324MSSsd9xS3NZTr~vJJZsMmK-wkj6OdHqpQeUtyzmTwAuEf0-qf8-lH3s2zW9aTpgi3Tb0gmauES-IELEoYUqCJsJoz~pNyypcbDv~9R3bPATJjSGGtwpYT9Vv1Jft0wcGdaoC1L5vQySx1lWmg-b3fISamuFmGdXdRFS9GnrOmectzcehxLW2CTgX4jS44Yvz9MkPsJgVst3PDRvJ-vbU64qHWCpdAPzGqt6Zw__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
