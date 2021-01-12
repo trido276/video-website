@@ -5,7 +5,7 @@ import {
     Switch,
     NavLink,
 } from "react-router-dom";
-import Home from './Home';
+import Home from './modules/Home/Home';
 import NotFound from './NotFound';
 import Player from './modules/Player/index.js';
 

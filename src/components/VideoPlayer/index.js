@@ -25,7 +25,7 @@ const VideoPlayer = (props) => {
     let player = videoNode?.current ? videojs(videoNode.current, videoJsOptions) : null;
     if (JSON.stringify(videoJsOptions) && JSON.stringify(videoInfo)) {
       if (videoInfo?.src && player) {
-        const {showBackBtn, showInnerTitle, showSeekBtns, showMuteBtn, showSubBanner, delayPlay, autoplay} = videoJsOptions
+        const {showBackBtn, showInnerTitle, showSeekBtns, showMuteBtn, showSubBanner, delayPlay} = videoJsOptions
         player.src(videoInfo?.src)
 
         
@@ -65,16 +65,27 @@ const VideoPlayer = (props) => {
           }
         }
         
-        if (delayPlay) {
-          player.ready(function() {
-            let player = this;
-            setTimeout(function(){
-              player.play();
-            }, delayPlay || 0);
-          })
+        try {
+          if (Number.parseInt(delayPlay) > 0) {
+            player.ready(function() {
+              let player = this;
+              if (player && typeof player.play() === 'function') {
+                setTimeout(function(){
+                  player.play();
+                }, delayPlay);
+              }
+            })
+          }
         }
+        catch (err){}
       }
     }
+
+    return () => {
+      if (player) {
+        player.dispose();
+      }
+    };
   }, [videoJsOptions,JSON.stringify(videoInfo)]);
 
   return (

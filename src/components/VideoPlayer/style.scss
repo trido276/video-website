@@ -13,7 +13,7 @@ $center-big-play-button: true;
 $path: 'https://tri-do-site.web.app/';
 .video-js {
   font-size: 10px;
-  color: $primary-foreground-color;
+  color: rgba($primary-foreground-color, 0.87);
 }
 
 .vjs-default-skin .vjs-big-play-button {

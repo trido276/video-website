@@ -27,7 +27,7 @@ const VideoBanner = (props) => {
       audioTrackButton: false,
     },
     preload: 'none',
-    // loop: true,
+    loop: true,
     fluid: true,
     fill: true,
     muted: true,
@@ -37,12 +37,10 @@ const VideoBanner = (props) => {
   return (
     <VideoPlayer
       ref={videoPlayer}
-        {...{
-          videoJsOptions:videoJsOptions,
-          videoInfo: videoInfo}
-        }
-      />
-    )
+      videoJsOptions={videoJsOptions}
+      videoInfo={videoInfo}
+    />
+  )
 }
 
 export default VideoBanner

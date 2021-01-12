@@ -5,15 +5,17 @@ import './style.scss';
 const VideoList = (props) => {
   const {
     title,
-    sources
+    sources,
+    videoJsOptions
   } = props
-  const videoJsOptions = {
+  const DEFAULT_OPTIONS = {
     autoplay: true,
     controls: false,
     showMuteBtn: true,
     muted: true,
   }
   /*
+  TODO: merge key
     +source
       - poster
       - src
@@ -36,7 +38,7 @@ const VideoList = (props) => {
       <div className="row">
         {sources.map(videoInfo =>
           <div className="col-6 col-lg-3 video-listing-item" key={videoInfo.id}>
-            <HoverVideo {...{videoJsOptions: videoJsOptions, videoInfo: videoInfo}}/>
+            <HoverVideo videoJsOptions={Object.assign(videoJsOptions || {}, DEFAULT_OPTIONS)} videoInfo={videoInfo}/>
           </div>
         )}
       </div>

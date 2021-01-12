@@ -1,0 +1,18 @@
+$innerSpace: 2rem;
+$backGroundColor: #121212;
+.video-banner {
+  margin-top: ($innerSpace * -1);
+  margin-right: 0;
+  margin-left: ($innerSpace * -1);
+  margin-bottom: -15vh;
+  box-shadow: 0px 1rem 1rem lighten($backGroundColor, 30%);
+  @media screen and (max-width: 745px) {
+    max-height: 30%;
+    margin-bottom: 20%;
+  }
+  .vjs-poster {
+    background-color: rgba($backGroundColor, 0.8);
+    background-size: cover;
+    cursor: default !important;
+  }
+}

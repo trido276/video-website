@@ -29,16 +29,15 @@ class HoverVideo extends Component {
   }
 
   render() {
-
     return (
       <div className="hover-video-wrapper">
         {
-        this.state.isHovering ?
+          this.state.isHovering ?
             <div
               className="hover-video-container"
               onMouseLeave={this.handleMouseHover}>
-              <VideoPlayer {...{ videoJsOptions: this.state.videoJsOptions, videoInfo: this.state.videoInfo }} />
-              <div className="card row hover-video-actions">
+                <VideoPlayer videoJsOptions={this.state.videoJsOptions} videoInfo={this.state.videoInfo} />
+                <div className="card row hover-video-actions">
                 <div className="card-body col row">
                   <Link className="col" to={`/player/${this.state?.videoInfo?.id}`}>
                     <div className="action-item icon-place-holder play">
@@ -66,18 +65,14 @@ class HoverVideo extends Component {
                 </div>
               </div>
             </div>
-            : <></>
+          : <></>
         }
-        <div
-          className="hover-video"
-          onMouseEnter={this.handleMouseHover}
-        >
+        <div className="hover-video" onMouseEnter={this.handleMouseHover}>
           <Router>
             <Link to={`/player/${this.state?.videoInfo?.id}`}>
               <img src={this.state.videoInfo?.poster} />
             </Link>
           </Router>
-        
         </div>
       </div>
     );

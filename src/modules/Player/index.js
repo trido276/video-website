@@ -45,7 +45,7 @@ const Player = (props) => {
     // fluid: true,
     fill: true,
     muted: true,
-    poster: videoInfo?.poster,
+    poster: videoInfo?.posterHor,
     functions: {
       // onFocus: this.focusVideoPlayer,
       // onBlur: this.blurVideoPlayer,
@@ -53,6 +53,9 @@ const Player = (props) => {
       // onMouseEnter: this.focusVideoPlayer,
     }
   }
+  /*
+  TODO: dispose player
+  */
   
   return (
     <>
@@ -61,13 +64,11 @@ const Player = (props) => {
           <div className="App">
             <div className="player-wrapper">
               <div className="player-banner">
-              <VideoPlayer
-                ref={videoPlayer}
-                style={{"height":"100vh"}}
-                  {...{
-                    videoJsOptions:videoJsOptions,
-                    videoInfo: videoInfo
-                  }}
+                <VideoPlayer
+                  ref={videoPlayer}
+                  style={{"height":"100vh"}}
+                  videoJsOptions={videoJsOptions}
+                  videoInfo={videoInfo}
                 />
               </div>
             </div>
