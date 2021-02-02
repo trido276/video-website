@@ -42,7 +42,7 @@ $laptop
   }
 }
 .side-nav {
-  padding: 40px 5px 0px;
+  padding: 3vh 0;
   width: 6%;
   z-index: 1;
   background: $backGroundColor;
@@ -55,12 +55,15 @@ $laptop
     list-style-type: none;
     padding: 0px;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: grid;
+    &.top, &.bottom {
+      height: 10vh;
+    };
   }
   .nav-item{
     margin: auto 5%;
-    padding: 2em 0.25em;
+    padding: 3vh 1vh;
     display: block;
     a {
       color:white

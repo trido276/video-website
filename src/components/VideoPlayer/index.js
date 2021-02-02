@@ -63,21 +63,18 @@ const VideoPlayer = (props) => {
             removeInnerTitle(player)
             createInnerTitle(player, {title: videoInfo?.title})
           }
-        }
-        
-        try {
           if (Number.parseInt(delayPlay) > 0) {
             player.ready(function() {
               let player = this;
-              if (player && typeof player.play() === 'function') {
-                setTimeout(function(){
+              setTimeout(function(){
+                if (player && !player.isDisposed_ && typeof player.play === 'function') {
                   player.play();
-                }, delayPlay);
-              }
+                }
+              }, delayPlay);
             })
           }
         }
-        catch (err){}
+        
       }
     }
 
@@ -86,7 +83,7 @@ const VideoPlayer = (props) => {
         player.dispose();
       }
     };
-  }, [videoJsOptions,JSON.stringify(videoInfo)]);
+  }, [JSON.stringify(videoJsOptions),JSON.stringify(videoInfo)]);
 
   return (
     <div data-vjs-player>

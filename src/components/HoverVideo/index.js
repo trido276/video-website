@@ -18,6 +18,11 @@ class HoverVideo extends Component {
     };
   }
 
+  componentDidMount() {
+    let vm= this
+    this.setState({...vm.props, ...vm.state})
+  }
+
   handleMouseHover() {
     this.setState(this.toggleHoverState);
   }

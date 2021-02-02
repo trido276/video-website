@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useState} from 'react';
 import 'video.js/dist/video-js.css';
 import 'videojs-seek-buttons';
 import './style.scss'
@@ -6,8 +6,8 @@ import {
   useParams
 } from "react-router-dom";
 import VideoPlayer from '../../components/VideoPlayer/index.js'
-import NotFound from './../../NotFound';
-const SOURCE = require('./../../source.json')
+import NotFound from '../NotFound/index';
+import Command from '../../plugins/api';
 const Player = (props) => {
   // const {
     // videoId,
@@ -16,12 +16,8 @@ const Player = (props) => {
     // videoPlayer
   // } = props
   let videoId = useParams()?.id;
- 
-  const videoPlayer = useRef(null);
-  const getVideo = (id) => { return SOURCE.find(src => src.id === id)}
-
-  const videoInfo = getVideo(videoId)
-
+  const [videoInfo, updateVideoInfo] = useState({})
+  const [loading, updateLoading] = useState(true)
   const videoJsOptions = {
     showBackBtn: true,
     showInnerTitle: true,
@@ -53,19 +49,29 @@ const Player = (props) => {
       // onMouseEnter: this.focusVideoPlayer,
     }
   }
-  /*
-  TODO: dispose player
-  */
+
+  useEffect(() => {
+    updateLoading(true)
+    Command('videos',{id: videoId}).then(res => {
+      updateVideoInfo(res);
+    }).catch(err => {
+      console.log(err)
+    }).finally(()=> {
+      updateLoading(false);
+    })
+  },[videoId])
   
   return (
     <>
       {
-        videoInfo ? 
+        loading ? <h1 className="text-white text-center" >Loading</h1> :
+        videoInfo.id ?
           <div className="App">
             <div className="player-wrapper">
               <div className="player-banner">
                 <VideoPlayer
-                  ref={videoPlayer}
+                  key={JSON.stringify(videoInfo)}
+                  // ref={videoPlayer}
                   style={{"height":"100vh"}}
                   videoJsOptions={videoJsOptions}
                   videoInfo={videoInfo}
