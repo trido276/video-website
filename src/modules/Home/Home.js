@@ -20,7 +20,7 @@ const Home = () => {
             updateMylist(ml);
             updateRecommend(rec);
             updateBanner({
-                ...{poster:banner.posterBig},
+                ...{poster:bann.posterBig},
                 ...bann
             });
         }).catch(err => {
